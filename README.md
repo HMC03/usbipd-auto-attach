@@ -16,4 +16,15 @@ This provides instruction on how to write a windows service that will automatica
 C:path\to\nssm install usbipd-auto-attach
 ```
 
-5) 
+5) Set configuration
+* Application
+    * Path: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+    * Startup: C:\Users\hayde\Services\
+
+    * Arguments:  -ExecutionPolicy Bypass -NoLogo -NoProfile -WindowStyle Hidden -File "C:\Users\hayde\Services\usbipd-auto-attach.ps1"
+* Details
+    * Startup Type: Automatic
+
+* Log On
+    * This account
